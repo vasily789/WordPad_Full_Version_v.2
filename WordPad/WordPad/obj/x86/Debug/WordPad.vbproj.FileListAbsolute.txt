@@ -9,3 +9,13 @@ c:\users\vasily\documents\visual studio 2010\Projects\WordPad\WordPad\obj\x86\De
 c:\users\vasily\documents\visual studio 2010\Projects\WordPad\WordPad\obj\x86\Debug\WordPad.WordPadForm.resources
 C:\Users\Vasily\Documents\Visual Studio 2010\Projects\WordPad\WordPad\obj\x86\Debug\WordPad.Form1.resources
 C:\Users\Vasily\Documents\Visual Studio 2010\Projects\WordPad\WordPad\obj\x86\Debug\WordPad.vbprojResolveAssemblyReference.cache
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.exe
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.xml
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.pdb
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\bin\Debug\WordPad.exe
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\bin\Debug\WordPad.pdb
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\bin\Debug\WordPad.xml
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.Form1.resources
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.WordPadForm.resources
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.Resources.resources
+C:\Users\ben\Desktop\WordPad_Full_Version_v.2\WordPad\WordPad\obj\x86\Debug\WordPad.vbproj.GenerateResource.Cache

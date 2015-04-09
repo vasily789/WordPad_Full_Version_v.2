@@ -11,7 +11,7 @@ Public Class WordPadForm
     Dim StringToPrint As String
 
     Private Sub BoldToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BoldToolStripButton.Click
-        If RichTextBox1.SelectionFont.Bold Then 'its already Bold, so set it to regular
+        If RichTextBox1.SelectionFont.Bold Then  'its already Bold, so set it to regular
             RichTextBox1.SelectionFont = New Font(FontStyleStripComboBox.SelectedItem.ToString(), Convert.ToSingle(FontSizeToolStripComboBox.SelectedItem), FontStyle.Regular)
             BoldBoolean = False
         Else 'make it bold
@@ -314,7 +314,39 @@ Public Class WordPadForm
     End Sub
     Private Sub FontStyleStripComboBox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles FontStyleStripComboBox.SelectedIndexChanged
         ' Error when no selection occure
+        ' check and see if the selected font is bold,italic,underlined, or strikedout
+        Dim Bold As Boolean
+        Dim Italic As Boolean
+        Dim Strikeout As Boolean
+        Dim Underlined As Boolean
+        If RichTextBox1.SelectionFont.Bold Then
+            Bold = True
+        End If
+        If RichTextBox1.SelectionFont.Italic Then
+            Italic = True
+        End If
+        If RichTextBox1.SelectionFont.Strikeout Then
+            Strikeout = True
+        End If
+        If RichTextBox1.SelectionFont.Underline Then
+            Underlined = True
+        End If
+
         RichTextBox1.SelectionFont = New System.Drawing.Font(FontStyleStripComboBox.Text, FontSizeToolStripComboBox.Text)
+
+        If Bold Then 'it was Bold, so set it again
+            RichTextBox1.SelectionFont = New Font(FontStyleStripComboBox.SelectedItem.ToString(), Convert.ToSingle(FontSizeToolStripComboBox.SelectedItem), FontStyle.Bold)
+        End If
+        If Italic Then 'it was Italic, so set it again
+            RichTextBox1.SelectionFont = New Font(FontStyleStripComboBox.SelectedItem.ToString(), Convert.ToSingle(FontSizeToolStripComboBox.SelectedItem), FontStyle.Italic)
+        End If
+        If Strikeout Then 'it was Strikeout, so set it again
+            RichTextBox1.SelectionFont = New Font(FontStyleStripComboBox.SelectedItem.ToString(), Convert.ToSingle(FontSizeToolStripComboBox.SelectedItem), FontStyle.Strikeout)
+        End If
+        If Underlined Then 'it was Underlined, so set it again
+            RichTextBox1.SelectionFont = New Font(FontStyleStripComboBox.SelectedItem.ToString(), Convert.ToSingle(FontSizeToolStripComboBox.SelectedItem), FontStyle.Underline)
+        End If
+
         RichTextBox1.Focus()
     End Sub
 
